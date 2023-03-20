@@ -1,0 +1,13 @@
+= DDD in action: Strategies and tactics for Java solutions
+
+Here are the projects used in the exercises of the https://github.com/ultimate-engineer/ddd-workshop[DDD in Action Workshop].
+
+== Requirements
+
+* Java 17 or higher
+* Git
+* Maven
+* An IDE of your preference
+* Docker
+* https://egon.io/[Egon.io]
+* https://fonts.google.com/icons?selected=Material+Icons[Icons]
