@@ -28,7 +28,7 @@ public class Book {
         this.price = price;
     }
 
-    /** Getters & Setters */
+    /** Getters and Setters */
     public String getIsbn() {
         return isbn;
     }
