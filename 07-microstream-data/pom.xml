@@ -24,7 +24,7 @@
         <maven.compile.version>3.5.1</maven.compile.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <weld.se.core.version>5.1.0.Final</weld.se.core.version>
-        <smallrye.config.version>3.1.1</smallrye.config.version>
+        <smallrye.config.version>3.2.1</smallrye.config.version>
         <microstream.data.version>0.0.2</microstream.data.version>
         <argLine> --add-opens java.base/java.lang=ALL-UNNAMED --add-exports java.base/sun.nio.ch=ALL-UNNAMED </argLine>
     </properties>
