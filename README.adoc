@@ -1,13 +1,68 @@
-= DDD in action: Strategies and tactics for Java solutions
+= DDD in Action: Strategies and Tactics for Java Solutions
 :toc: auto
 
-Here are the projects used in the exercises of the https://github.com/o-s-expert/ddd-workshop[DDD in Action Workshop].
+This repository contains the **labs** used in the https://github.com/o-s-expert/ddd-workshop[DDD in Action Workshop].
+Each lab demonstrates how to apply **strategic and tactical DDD** patterns in Java, with persistence support using **MongoDB** and **Oracle NoSQL**.
 
 == Requirements
 
 * Java 21 or higher
 * Git
 * Maven
-* An IDE of your preference
+* An IDE of your choice (IntelliJ IDEA, Eclipse, VS Code, etc.)
 * Docker
 * Docker Compose
+
+== Project Structure
+
+All labs are organized inside a **single Maven project**, and each one builds upon the previous step.
+Follow them in order to get the best learning experience.
+
+== Database Setup
+
+The labs require both **MongoDB** and **Oracle NoSQL**.
+A `docker-compose.yml` file is included at the root of the project to start them easily:
+
+[source,bash]
+----
+docker-compose up -d
+----
+
+This will start:
+* MongoDB on port `27017`
+* Oracle NoSQL on its configured port (default `8080` for admin, `5000` for client driver)
+
+== Running the Labs
+
+Build the project:
+
+[source,bash]
+----
+mvn clean install
+----
+
+Run a specific lab (replace `labX` with the module name):
+
+[source,bash]
+----
+mvn exec:java -pl labX
+----
+
+== How to Use
+
+1. Start the databases with Docker Compose.
+2. Open the project in your IDE.
+3. Build with Maven.
+4. Navigate to the desired lab module.
+5. Run it following the provided examples.
+
+== Notes
+
+* Ensure Docker is running before starting.
+* Data from MongoDB and Oracle NoSQL will persist in Docker volumes.
+* To reset everything, run:
+
+[source,bash]
+----
+docker-compose down -v
+----
