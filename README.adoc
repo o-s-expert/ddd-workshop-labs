@@ -15,7 +15,7 @@ Each lab demonstrates how to apply **strategic and tactical DDD** patterns in Ja
 == Project Structure
 
 All labs are organized inside a **single Maven project**, and each one builds upon the previous step.
-Follow them in order to get the best learning experience.
+Follow them to get the best learning experience.
 
 == Database Setup
 
