@@ -20,6 +20,5 @@
  
     <modules>
         <module>01-hello-world</module>
-        <module>02-create-service</module>
     </modules>
 </project>
