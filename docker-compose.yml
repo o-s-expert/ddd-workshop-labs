@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb-instance
+    ports:
+      - "27017:27017"
+    restart: always
+
+  oracle-nosql:
+    image: ghcr.io/oracle/nosql:latest-ce
+    container_name: oracle-nosql-instance
+    ports:
+      - "8080:8080"
+    restart: always
