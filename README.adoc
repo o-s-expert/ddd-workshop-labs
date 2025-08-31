@@ -1,6 +1,7 @@
 = DDD in action: Strategies and tactics for Java solutions
+:toc: auto
 
-Here are the projects used in the exercises of the https://github.com/ultimate-engineer/ddd-workshop[DDD in Action Workshop].
+Here are the projects used in the exercises of the https://github.com/o-s-expert/ddd-workshop[DDD in Action Workshop].
 
 == Requirements
 
