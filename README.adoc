@@ -2,7 +2,7 @@
 :toc: auto
 
 This repository contains the **labs** used in the https://github.com/o-s-expert/ddd-workshop[DDD in Action Workshop].
-Each lab demonstrates how to apply **strategic and tactical DDD** patterns in Java, with persistence support using **MongoDB** and **Oracle NoSQL**.
+Each lab demonstrates how to apply **strategic and tactical DDD** patterns in Java, with persistence support using **MongoDB** or **Oracle NoSQL**.
 
 == Requirements
 
@@ -11,7 +11,6 @@ Each lab demonstrates how to apply **strategic and tactical DDD** patterns in Ja
 * Maven
 * An IDE of your choice (IntelliJ IDEA, Eclipse, VS Code, etc.)
 * Docker
-* Docker Compose
 
 == Project Structure
 
@@ -20,8 +19,12 @@ Follow them in order to get the best learning experience.
 
 == Database Setup
 
-The labs require both **MongoDB** and **Oracle NoSQL**.
-A `docker-compose.yml` file is included at the root of the project to start them easily:
+The labs require **either MongoDB or Oracle NoSQL**.
+You can choose one of them depending on which database you want to explore.
+
+=== Option 1: Run with Docker Compose
+
+A `docker-compose.yml` file is included at the root of the project to start both databases:
 
 [source,bash]
 ----
@@ -30,7 +33,23 @@ docker-compose up -d
 
 This will start:
 * MongoDB on port `27017`
-* Oracle NoSQL on its configured port (default `8080` for admin, `5000` for client driver)
+* Oracle NoSQL on port `8080`
+
+=== Option 2: Run Containers Individually
+
+You can also start only one database using `docker run`:
+
+Start MongoDB:
+[source,bash]
+----
+docker run -d --name mongodb-instance -p 27017:27017 mongo
+----
+
+Start Oracle NoSQL:
+[source,bash]
+----
+docker run -d --name oracle-instance -p 8080:8080 ghcr.io/oracle/nosql:latest-ce
+----
 
 == Running the Labs
 
@@ -50,7 +69,7 @@ mvn exec:java -pl labX
 
 == How to Use
 
-1. Start the databases with Docker Compose.
+1. Start either MongoDB or Oracle NoSQL (or both using Docker Compose).
 2. Open the project in your IDE.
 3. Build with Maven.
 4. Navigate to the desired lab module.
@@ -59,7 +78,7 @@ mvn exec:java -pl labX
 == Notes
 
 * Ensure Docker is running before starting.
-* Data from MongoDB and Oracle NoSQL will persist in Docker volumes.
+* If using Docker Compose, data will persist in Docker volumes.
 * To reset everything, run:
 
 [source,bash]
