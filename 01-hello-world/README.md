@@ -15,22 +15,22 @@ java -jar target/ecommerce.jar
 
 Basic:
 ```
-curl -X GET http://localhost:8080/simple-greet
+curl -X GET http://localhost:8181/simple-greet
 Hello World!
 ```
 
 
 JSON:
 ```
-curl -X GET http://localhost:8080/greet
+curl -X GET http://localhost:8181/greet
 {"message":"Hello World!"}
 
-curl -X GET http://localhost:8080/greet/Joe
+curl -X GET http://localhost:8181/greet/Joe
 {"message":"Hello Joe!"}
 
 curl -X PUT -H "Content-Type: application/json" -d '{"greeting" : "Hola"}' http://localhost:8080/greet/greeting
 
-curl -X GET http://localhost:8080/greet/Jose
+curl -X GET http://localhost:8181/greet/Jose
 {"message":"Hola Jose!"}
 ```
 
@@ -39,7 +39,7 @@ curl -X GET http://localhost:8080/greet/Jose
 ## Try health
 
 ```
-curl -s -X GET http://localhost:8080/health
+curl -s -X GET http://localhost:8181/health
 {"outcome":"UP",...
 
 ```
@@ -66,7 +66,7 @@ project generation phase.
 
 ```
 # Prometheus Format
-curl -s -X GET http://localhost:8080/metrics
+curl -s -X GET http://localhost:8181/metrics
 # TYPE base:gc_g1_young_generation_count gauge
 . . .
 
