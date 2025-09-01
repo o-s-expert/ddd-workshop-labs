@@ -4,6 +4,8 @@
 This repository contains the **labs** used in the https://github.com/o-s-expert/ddd-workshop[DDD in Action Workshop].
 Each lab demonstrates how to apply **strategic and tactical DDD** patterns in Java, with persistence support using **MongoDB** or **Oracle NoSQL**.
 
+Check website for more details: https://o-s-expert.github.io/ddd-workshop/[Click Here]
+
 == Requirements
 
 * Java 21 or higher
@@ -11,6 +13,8 @@ Each lab demonstrates how to apply **strategic and tactical DDD** patterns in Ja
 * Maven
 * An IDE of your choice (IntelliJ IDEA, Eclipse, VS Code, etc.)
 * Docker
+
+
 
 == Project Structure
 
