@@ -95,7 +95,7 @@ To simplify testing the REST endpoints, a Postman collection is included:
 
 1. Open Postman.
 2. Click on **Import** (top-left corner).
-3. Select the file `DDD_Workshop.postman_collection.json` from the project root.
+3. Select the file link:DDD_Workshop.postman_collection.json[DDD_Workshop.postman_collection.json] from the project root.
 4. The collection will appear in your workspace under **Collections**.
 
 You can now run the predefined requests for each lab directly from Postman.
