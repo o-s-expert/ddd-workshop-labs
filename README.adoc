@@ -85,3 +85,17 @@ mvn exec:java -pl labX
 ----
 docker-compose down -v
 ----
+
+== Postman Collection
+
+To simplify testing the REST endpoints, a Postman collection is included:
+`DDD_Workshop.postman_collection.json`.
+
+=== Importing into Postman
+
+1. Open Postman.
+2. Click on **Import** (top-left corner).
+3. Select the file `DDD_Workshop.postman_collection.json` from the project root.
+4. The collection will appear in your workspace under **Collections**.
+
+You can now run the predefined requests for each lab directly from Postman.
