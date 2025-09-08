@@ -30,7 +30,6 @@ public class SimpleGreetResource {
     private static final String GETS_TIMER_NAME = "allGets";
     private static final String GETS_TIMER_DESCRIPTION = "Tracks all GET operations";
     private final String message;
-
     @Inject
     public SimpleGreetResource(@ConfigProperty(name = "app.greeting") String message) {
         this.message = message;
@@ -50,8 +49,6 @@ public class SimpleGreetResource {
         return message;
     }
 
-
-    @Path("/{name}")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Counted(name = PERSONALIZED_GETS_COUNTER_NAME,
