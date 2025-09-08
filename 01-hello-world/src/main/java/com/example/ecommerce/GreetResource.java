@@ -23,13 +23,13 @@ import org.eclipse.microprofile.openapi.annotations.responses.APIResponses;
  * A simple JAX-RS resource to greet you. Examples:
  *
  * Get default greeting message:
- * curl -X GET http://localhost:8080/greet
+ * curl -X GET http://localhost:8181/greet
  *
  * Get greeting message for Joe:
- * curl -X GET http://localhost:8080/greet/Joe
+ * curl -X GET http://localhost:8181/greet/Joe
  *
  * Change greeting
- * curl -X PUT -H "Content-Type: application/json" -d '{"greeting" : "Howdy"}' http://localhost:8080/greet/greeting
+ * curl -X PUT -H "Content-Type: application/json" -d '{"greeting" : "Howdy"}' http://localhost:8181/greet/greeting
  *
  * The message is returned as a JSON object.
  */
