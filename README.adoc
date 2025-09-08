@@ -41,6 +41,9 @@ This will start:
 * MongoDB on port `27017`
 * Oracle NoSQL on port `8080`
 
+To change the ports, edit the `docker-compose.yml` file.
+
+
 === Option 2: Run Containers Individually
 
 You can also start only one database using `docker run`:
