@@ -106,7 +106,6 @@ public class GreetResource {
         greetingProvider.setMessage(message.getGreeting());
         return Response.status(Response.Status.NO_CONTENT).build();
     }
-
     private Message createResponse(String who) {
         String msg = String.format("%s %s!", greetingProvider.getMessage(), who);
 
