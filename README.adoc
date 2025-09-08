@@ -13,6 +13,8 @@ Check website for more details: https://o-s-expert.github.io/ddd-workshop/[Click
 * Maven
 * An IDE of your choice (IntelliJ IDEA, Eclipse, VS Code, etc.)
 * Docker
+* Docker Compose (optional, for starting databases)
+* Postman (optional, for testing REST endpoints)
 
 
 
