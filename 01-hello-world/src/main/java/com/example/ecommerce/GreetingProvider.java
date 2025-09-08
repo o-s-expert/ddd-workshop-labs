@@ -24,11 +24,9 @@ public class GreetingProvider {
     public GreetingProvider(@ConfigProperty(name = "app.greeting") String message) {
         this.message.set(message);
     }
-
     String getMessage() {
         return message.get();
     }
-
     void setMessage(String message) {
         this.message.set(message);
     }
