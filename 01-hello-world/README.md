@@ -28,7 +28,7 @@ curl -X GET http://localhost:8181/greet
 curl -X GET http://localhost:8181/greet/Joe
 {"message":"Hello Joe!"}
 
-curl -X PUT -H "Content-Type: application/json" -d '{"greeting" : "Hola"}' http://localhost:8080/greet/greeting
+curl -X PUT -H "Content-Type: application/json" -d '{"greeting" : "Hola"}' http://localhost:8181/greet/greeting
 
 curl -X GET http://localhost:8181/greet/Jose
 {"message":"Hola Jose!"}
@@ -71,7 +71,7 @@ curl -s -X GET http://localhost:8181/metrics
 . . .
 
 # JSON Format
-curl -H 'Accept: application/json' -X GET http://localhost:8080/metrics
+curl -H 'Accept: application/json' -X GET http://localhost:8181/metrics
 {"base":...
 . . .
 ```
@@ -87,7 +87,7 @@ docker build -t ecommerce .
 ## Running the Docker Image
 
 ```
-docker run --rm -p 8080:8080 ecommerce:latest
+docker run --rm -p 8181:8181 ecommerce:latest
 ```
 
 Exercise the application as described above.
