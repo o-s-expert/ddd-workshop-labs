@@ -16,8 +16,6 @@ Check website for more details: https://o-s-expert.github.io/ddd-workshop/[Click
 * Docker Compose (optional, for starting databases)
 * Postman (optional, for testing REST endpoints)
 
-
-
 == Project Structure
 
 All labs are organized inside a **single Maven project**, and each one builds upon the previous step.
