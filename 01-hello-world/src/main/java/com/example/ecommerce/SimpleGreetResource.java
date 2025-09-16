@@ -49,6 +49,7 @@ public class SimpleGreetResource {
         return message;
     }
 
+    @Path("/{name}")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Counted(name = PERSONALIZED_GETS_COUNTER_NAME,
